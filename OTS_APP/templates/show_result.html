@@ -1,0 +1,28 @@
+{% extends 'master.html' %}
+{% block title %}welcome to online testing system {% endblock %}
+{% block top %}
+<a href="{% url 'OTS_APP:home' %}">HOME</a>
+<a href="{% url 'OTS_APP:logout' %}">LOGOUT</a>
+{% endblock %}
+{% block content %}
+   <table>
+    <tr>
+        <th>Date</th>
+        <th>Time</th>
+        <th>Attempt</th>
+        <th>Right</th>
+        <th>Wrong</th>
+        <th>Points</th>
+    </tr>
+    {% for i in context %}
+    <tr>
+        <td>{{i.date}}</td>
+        <td>{{i.time}}</td>
+        <td>{{i.attempt}}</td>
+        <td>{{i.Right}}</td>
+        <td>{{i.Wrong}}</td>
+        <td>{{i.Points}}</td>
+    </tr>
+    {% endfor %}
+   </table>
+{% endblock %}

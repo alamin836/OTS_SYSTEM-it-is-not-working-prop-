@@ -1,0 +1,52 @@
+.top{
+    background-color: #afd275;
+    height: 50px;
+    padding: 20px;
+
+}
+.top .sitename{
+     display: inline-block;
+     color: #f64c72;
+     position: relative;
+     top: -10px;
+}
+.top .menu{
+    position: relative;
+    float: right;
+    top: 10px;
+}
+.top .menu a{
+    text-decoration: none;
+    color: #456705;
+    display: inline-block;
+    margin-right: 10px;
+    min-width: 50px;
+}
+.content{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+table{
+  
+    width: 90%;
+
+}
+table tr:nth-child(odd){
+    background-color: #456705;
+    color: azure;
+    height: 30px;
+}
+table tr:nth-child(even){
+    background-color: #afd275;
+    color: azure;
+    height: 30px;
+}
+table tr:nth-child(1){
+    background-color: #c74006;
+    color: azure;
+    height: 30px;
+}
+table td{
+    text-align: center;
+}

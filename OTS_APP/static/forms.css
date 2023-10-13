@@ -1,0 +1,37 @@
+form{
+    box-sizing: border-box;
+    padding: 80px;
+    border-radius: 10px;
+    background-color: aqua;
+    display: table;
+   
+    width:100%;
+    
+}
+input{
+    display: block;
+    width: 100%;
+    height: 30px;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+.question{
+    color: red;
+    font-size: 22px;
+}
+.button-link{
+    width: 200px;
+    height: 40px;
+    background-color: red;
+    margin-bottom: 20px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 3px 3px 1px 3px green ;
+   
+}
+.button-link a{
+    text-decoration: none;
+    font-size: 20px;
+}
+

@@ -1,0 +1,26 @@
+{% extends 'master.html' %}
+{% block title %}
+ OTS- Registration status
+{% endblock %}
+{% block top %}
+<a href="{% url 'OTS_APP:RegistrationForm' %}">SignUp</a>
+<a href="{% url 'OTS_APP:login' %}">Login</a>
+{% endblock %}
+{% block content %}
+  {% if userstatus == 1 %}
+   <div class="userstatus">
+     sorry!user alredy exists ,use another username
+     <a href="{% url 'OTS_APP:RegistrationForm' %}"></a>
+   </div>
+   {% elif userstatus == 2 %}
+   <div class="userstatus">
+     congratulations!user successfully create
+     <a href="{% url 'OTS_APP:login' %}"></a>
+   </div>
+   {% elif userstatus == 3 %}
+   <div class="userstatus">
+     oops! improper request
+     <a href="{% url 'OTS_APP:RegistrationForm' %}"></a>
+   </div>
+{% endif %}
+{% endblock %}

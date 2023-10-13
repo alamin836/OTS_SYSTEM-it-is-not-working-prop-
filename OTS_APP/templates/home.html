@@ -1,0 +1,22 @@
+{% extends 'master.html' %}
+{% block title %}OTS-Candidate Home Page{% endblock %}
+{% block top %}
+   <a href="{% url 'OTS_APP:RegistrationForm' %}">SignUp</a>
+   <a href="{% url 'OTS_APP:logout' %}">LogOut</a>
+{% endblock %}
+{% block content %}
+  <h1>welcome {{request.session.name}} to your home page</h1>
+  <div class="button-link">
+    <a href="{% url 'OTS_APP:TestPaper' %}?n=2">test of 2 question</a>
+  </div>
+  <div class="button-link">
+    <a href="{% url 'OTS_APP:TestPaper' %}?n=3">test of 3 question</a>
+  </div>
+  <div class="button-link">
+    <a href="{% url 'OTS_APP:TestPaper' %}?n=4">test of 4 question</a>
+  </div>
+  <div class="button-link">
+    <a href="{% url 'OTS_APP:TestHistory' %}">TestHistory</a>
+  </div>
+
+{% endblock %}
